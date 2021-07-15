@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Default .babylon loading scene</title>
+    <title>STILE gallery</title>
     <meta charset="UTF-8" />
     <!-- this link to the preview online version of BJS -->
     <script src="https://preview.babylonjs.com/babylon.js"></script>
@@ -15,7 +15,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        color: white;
+        color: black;
       }
 
       #canvas {
@@ -38,7 +38,7 @@
         var camera = new BABYLON.ArcRotateCamera("Camera", 1, 1, 4, BABYLON.Vector3.Zero(), scene);
         camera.attachControl(canvas, false);
 
-        scene.clearColor = new BABYLON.Color3(1, 1, 1);
+        scene.clearColor = new BABYLON.Color3(0, 0, 0);
         scene.ambientColor = new BABYLON.Color3.White();
 
         engine.runRenderLoop(function () {
